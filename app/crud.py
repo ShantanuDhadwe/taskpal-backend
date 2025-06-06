@@ -2,7 +2,7 @@
 
 from sqlalchemy.orm import Session
 from datetime import datetime
-from . import models, schemas
+from app import models, schemas
 
 def calculate_priority_score(weight, due_date):
     if not due_date:
