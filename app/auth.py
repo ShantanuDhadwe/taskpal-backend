@@ -5,7 +5,7 @@ from jose import JWTError, jwt
 from passlib.context import CryptContext
 from sqlalchemy.orm import Session
 from fastapi import Depends, HTTPException, status
-from . import models, schemas, database
+from app import models, schemas, database
 
 SECRET_KEY = "SUPER_SECRET_KEY"
 ALGORITHM = "HS256"
