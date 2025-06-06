@@ -4,10 +4,10 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 import os
 from groq import Groq
-from .dependencies import get_db
-from .models import User
+from app.dependencies import get_db
+from app.models import User
 from dotenv import load_dotenv
-from .dependencies import get_current_user
+from app.dependencies import get_current_user
 load_dotenv()
 router = APIRouter()
 
